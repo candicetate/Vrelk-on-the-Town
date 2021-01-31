@@ -60,7 +60,6 @@ body {
     box-shadow: 0 5px 0 5px #B4A56A;
     max-width: 80%;
     padding: 20px;
-    width: 800px;
 }
 
   </style>
@@ -120,7 +119,7 @@ body {
     const textNodes = [
        {
            id: 1,
-           text: 'You wake up in a dark place. You are not sure where you are. You have a headache.' ,
+           text: 'Vrek wakes up in a dark place. He is not quite sure exactly where he is. He has a slight headache',
            options: [
                {
                 text: 'Wiggle around',
@@ -136,7 +135,7 @@ body {
 
        {
            id: 2,
-           text: 'You decide to wiggle your way out of wherever this is. It worked in ther past so why not now? You violently wiggle and everything around you starts moving. You hear the cracking of wood as you collide with the ground.' ,
+           text: 'Vrelk can wiggle his way out of whatever this is. It worked in ther past so why not now? Vrelk violently wiggles and everything around him starts moving. He hears the cracking of wood as he collides with the ground.' ,
            options: [
                {
                 text: 'Collect yourself and look around',
@@ -151,7 +150,7 @@ body {
 
        {
            id: 3,
-           text: 'You decide to go back to sleep. Surely this problem will sort itself out. After an undetermined amount of time, you awake in the same dark place. It is slightly warmer and you still have a headache' ,
+           text: 'Back to sleep it is! Surely this problem will sort itself out. After an undetermined amount of time, Vrelk awakens in the same dark place. It is slightly warmer and he still has a headache' ,
            options: [
                {
                 text: 'Wiggle for you life',
@@ -161,7 +160,7 @@ body {
                 nextText: 2
                },
                {
-                text: 'Wiggle with as much strength as you are willing to commit at this current time',
+                text: 'Wiggle with as much strength as you are willing to commit at this time',
                 nextText: 2
                },
            ]
@@ -169,20 +168,49 @@ body {
 
        {
            id: 4,
-           text: '"Yeee-ouch!" you cry. You look around, and it appears you were asleep in an empthy ale barrel. Everything about last night is starting to come back to you. You remember being the life of the party.' ,
+           text: '"OW! SON OF A…" Vrelk falls out of a barrel in an alley. It looks to be about noon. He’s not sure how he got there. "How did I end up in a barrel?" he wonders. Vrelk looks beyond the alley to see a town he’s not familiar with. The alley is full of barrels, crates and random junk. "Also where am I?"' ,
            options: [
                {
                 text: 'Check your items',
                 nextText: 5,
                },
+               
+           ]
+       },
+
+       {
+           id: 5,
+           text: 'Vrelk notices that his wallet is missing. "… AND WHERE IS ALL MY MONEY?!" He starts frantically checking his pockets. "Someone must have stolen it! That’s the only logical explanation!" Ignoring the smell of ale on his entire self, he decides to get to the bottom of this.' ,
+           options: [
                {
-                text: 'Check for injuries',
-                nextText: 6
+                text: 'Leave the alley',
+                nextText: 6,
+               },
+               
+           ]
+       },
+
+       {
+           id: 6,
+           text: 'Vrelk walks towards the opening of the alley to head into town. He’s unaware that there is a wanted poster in the background with his picture on it. The poster reads: WANTED: VRELK for thievery, gambling, public nudity. "I’m going to go get that sucker who stole my money!"' ,
+           options: [
+               {
+                text: 'Talk to a man in the street',
+                nextText: 7,
                },
                {
-                text: 'Reflect on how charming you are',
-                nextText: 7
+                text: 'Talk to an Orc in armor handing out leaflets',
+                nextText: 8,
                },
+               {
+                text: 'Look around',
+                nextText: 9,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 10,
+               },
+               
            ]
        },
 
