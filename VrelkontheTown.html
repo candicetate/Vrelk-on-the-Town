@@ -77,6 +77,74 @@ body {
     </div>
     </body>
 <script>
-    
+    const textElement = document.getElementById('text')
+    const optionButtonsElement = document.getElementById('options')
+
+    let state = {}
+
+    function startGame() {
+         state = {}
+         showTextNode(1)
+    }
+
+    function showTextNode(textNodeIndex){
+        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+        textElement.innerText = textNode.text
+    }
+
+    function selectOption(option) {
+
+    }
+
+    const textNodes = [
+       {
+           id: 1,
+           text: 'You wake up in a dark place. You are not sure where you are. You have a headache.' ,
+           options: [
+               {
+                text: 'Wiggle around',
+                nextText: 2
+               },
+               {
+                text: 'Accept your fate and go back to sleep',
+                nextText: 2.2
+               },
+           ]
+       },
+
+       {
+           id: 2,
+           text: 'You decide to wiggle your way out of wherever this is. It worked in ther past so why not now? You violently wiggle and everything around you starts moving. You hear the cracking of wood as you collide with the ground.' ,
+           options: [
+               {
+                text: 'Collect yourself and look around',
+                nextText: 3
+               },
+               {
+                text: 'Regret that you missed a chance to sleep longer',
+                nextText: 3
+               },
+           ]
+       },
+
+       {
+           id: 2.2,
+           text: 'You decide to go back to sleep. Surely this problem will sort itself out. After an undetermined amount of time, you awake in the same dark place. It is slightly warmer and you still have a headache' ,
+           options: [
+               {
+                text: 'Wiggle for you life',
+                nextText: 2
+               },
+               {
+                text: 'Wiggle with as much strength as you are willing to commit at this current time',
+                nextText: 2
+               },
+           ]
+       },
+
+    ]
+
+    startGame();
+
 </script>
 </html>
