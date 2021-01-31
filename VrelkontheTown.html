@@ -25,6 +25,7 @@ body {
     background-color: #7B7162;
     color: #393829;
     display: flex;
+    font-weight: 700;
     height: 100vh;
     justify-content:center;
     margin: 0;
@@ -45,6 +46,7 @@ body {
     box-shadow: 0 2px 0 2px #393829;
     color: #E6D69C;
     outline: none;
+    width: 225px;
 }
 
 .btn:hover {
@@ -90,10 +92,29 @@ body {
     function showTextNode(textNodeIndex){
         const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
         textElement.innerText = textNode.text
+        while (optionButtonsElement.firstChild) {
+            optionButtonsElement.removeChild(optionButtonsElement.firstChild)
+        }
+        
+    textNode.options.forEach(option => {
+        if (showOption(option)) {
+             const button = document.createElement('button')
+             button.innerText = option.text
+             button.classList.add('btn')
+             button.addEventListener('click', () => selectOption(option))
+             optionButtonsElement.appendChild(button)
+        }
+    })
+    }
+
+    function showOption(option) {
+        return option.requiredState == null || option.requiredState(state)
     }
 
     function selectOption(option) {
-
+        const nextTextNodeID = option.nextText
+        state = Object.assign(state, option.setState)
+        showTextNode(nextTextNodeID)
     }
 
     const textNodes = [
@@ -106,8 +127,9 @@ body {
                 nextText: 2
                },
                {
-                text: 'Accept your fate and go back to sleep',
-                nextText: 2.2
+                text: 'Accept your fate & go back to sleep',
+                setState: {wellRested: true},
+                nextText: 3
                },
            ]
        },
@@ -118,26 +140,48 @@ body {
            options: [
                {
                 text: 'Collect yourself and look around',
-                nextText: 3
+                nextText: 4
                },
                {
                 text: 'Regret that you missed a chance to sleep longer',
-                nextText: 3
+                nextText: 4
                },
            ]
        },
 
        {
-           id: 2.2,
+           id: 3,
            text: 'You decide to go back to sleep. Surely this problem will sort itself out. After an undetermined amount of time, you awake in the same dark place. It is slightly warmer and you still have a headache' ,
            options: [
                {
                 text: 'Wiggle for you life',
+                nextText: 2,
+                requiredState: (currentState) => currentState.wellRested,
+                setState: {wellRested: false},
                 nextText: 2
                },
                {
                 text: 'Wiggle with as much strength as you are willing to commit at this current time',
                 nextText: 2
+               },
+           ]
+       },
+
+       {
+           id: 4,
+           text: '"Yeee-ouch!" you cry. You look around, and it appears you were asleep in an empthy ale barrel. Everything about last night is starting to come back to you. You remember being the life of the party.' ,
+           options: [
+               {
+                text: 'Check your items',
+                nextText: 5,
+               },
+               {
+                text: 'Check for injuries',
+                nextText: 6
+               },
+               {
+                text: 'Reflect on how charming you are',
+                nextText: 7
                },
            ]
        },
