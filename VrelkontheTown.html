@@ -192,7 +192,7 @@ body {
 
        {
            id: 6,
-           text: 'Vrelk walks towards the opening of the alley to head into town. He’s unaware that there is a wanted poster in the background with his picture on it. The poster reads: WANTED: VRELK for thievery, gambling, public nudity. "I’m going to go get that sucker who stole my money!"' ,
+           text: 'Vrelk walks towards the opening of the alley to head into town. He’s unaware that there is a wanted poster in the background with his picture on it. The poster reads: WANTED: VRELK for thievery, gambling, public nudity. "I’m going to go get that sucker who stole my money!" Vrelk walks out of the opening of the alley and on to the street.' ,
            options: [
                {
                 text: 'Talk to a man in the street',
@@ -210,6 +210,187 @@ body {
                 text: 'Go in to the Tavern',
                 nextText: 10,
                },
+               
+           ]
+       },
+
+       {
+           id: 7,
+           text: 'Vrelk sees a man walking near the opening of the alley. "Hmmm, I don’t know what town this is, much less where my wallet went. Maybe one of these people will help me!" Vrelk approaches the man. "What do you want?" scoffs the scruffy looking human.' ,
+           options: [
+               {
+                text: '"I’m Vrelk! Do you know where I can get some money?"',
+                nextText: 11,
+               },
+               {
+                text: '"Wow, touchie!"',
+                nextText: 12,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 8,
+           text: 'Vrelk sees a familiar orc handing out leaflets. The orc is very tall, and dressed in armor adorned with images of the sun. "HI KATYA!" Vrelk exclaims. "Wow, I am genuinely surprised to see you up and about after all you drank last night" she replies. "You know me!" Vrelk answers "Sadly, yes I do" says Katya. She continue handing out information on her deity' ,
+           options: [
+           {
+                text: 'Look around',
+                nextText: 9,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 10,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 9,
+           text: 'Vrelk looks around. He cannot be sure which town this is... mostly because it looks like every other town he has been to. There are cobble stone streets, buildings aligning either side. There are people moving through the town as the likely do every day.' ,
+           options: [
+           {
+                text: 'Talk to a man in the street',
+                nextText: 7,
+               },
+               {
+                text: 'Talk to an Orc in armor handing out leaflets',
+                nextText: 8,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 10,
+               }, 
+               
+           ]
+       },
+
+       {
+           id: 10,
+           text: 'Vrelk approaches the tavern and enters. He looks over to see the postings on the wall. He sees the notice that says to check with the barkeep, however, he once again misses the wanted poster with his picture. “For work, check with Barkeep”, sounds simple enough!" Vrelk walks into the tavern and approaches the barkeep. There are a few patrons across the bar, but it’s daytime so they are fairly scarce at the moment' ,
+           options: [
+           {
+                text: 'Talk to the Barkeep',
+                nextText: 13,
+               },
+               
+           ]
+       },
+
+       {
+           id: 11,
+           text: '"Um, get a job?" The man replies sarcastically. "Any place I can find work?" Vrelk asks, completely oblivious to the obvious sarcasm. "I would check the notice board inside of the tavern. There are always postings there." answers the man. "Thanks friend!" Vrelk waves and walks away as the man rolls his eyes.' ,
+           options: [
+               {
+                text: 'Talk to an Orc in armor handing out leaflets',
+                nextText: 8,
+               },
+               {
+                text: 'Look around',
+                nextText: 9,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 10,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 12,
+           text: '"Get lost shorty!" The man replies angrily. "Any place I can find work?" Vrelk asks, completely oblivious to the obvious anger. "Check the notice board inside of the tavern and scram" answers the man. "Thanks friend!" Vrelk waves and walks away as the man rolls his eyes.' ,
+           options: [
+               {
+                text: 'Talk to an Orc in armor handing out leaflets',
+                nextText: 8,
+               },
+               {
+                text: 'Look around',
+                nextText: 9,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 10,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 13,
+           text: '"Hey there friend! I need money. Word on the street is, you can get me a job." Vrelk says as he climbs up on to the barstool. This town is not built for a 3 foot tall purple goblin. "Good day little Goblin!" says the Barkeep from behind the counter "And who might you be?"' ,
+           options: [
+               {
+                text: 'Vrelks the name! ',
+                nextText: 14,
+               },
+               {
+                text: 'I am Vrelk, master thief!',
+                nextText: 14,
+               },
+               {
+                text: 'I am Vrelk, most famous goblin in the land!',
+                nextText: 14,
+               },
+               {
+                text: 'SOME ALE MY GOOD MAN!',
+                nextText: 15,
+               },
+               
+           ]
+       },
+
+       {
+           id: 14,
+           text: '"Vrelk?" the man asks."The same Vrelk who has commited thievery, gambling, and public nudity?"' ,
+           options: [
+               {
+                text: 'Thats right V-R-E-L-K. Vrelk. ',
+                nextText: 16,
+               },
+               {
+                text: 'The one and only!',
+                nextText: 16,
+               },
+               {
+                text: 'I see my reputation preceeds me good sir.',
+                nextText: 16,
+               },
+               {
+                text: 'Finally the recognition I deserve!',
+                nextText: 16,
+               },
+               
+           ]
+       },
+
+       {
+           id: 15,
+           text: '"Ale, huh? You got any ID on you squirt?" The Barkeep looks at Vrelk. Sadly, Vrelk does not have his wallet. "Ummmmm yes?" Vrelk smiles wide. "No ID, no ale" the Barkeep explains. "Dammit" Vrelk frowns in disappointment.' ,
+           options: [
+               {
+                text: 'Vrelks the name! ',
+                nextText: 14,
+               },
+               
+           ]
+       },
+
+       {
+           id: 16,
+           text: '"Thats him fellas" the Barkeep says loudly over Vrelks head. Vrelk looks over to a table to see 2 men, who look like city guards, approach him with their weapons drawn. "Aw beans" Vrelk' ,
+           options: [
+               {
+                text: 'To be continued... ',
+                nextText: 1,
+               },
+               
                
            ]
        },
