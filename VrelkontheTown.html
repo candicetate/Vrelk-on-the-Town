@@ -387,10 +387,113 @@ body {
            text: '"Thats him fellas" the Barkeep says loudly over Vrelks head. Vrelk looks over to a table to see 2 men, who look like city guards, approach him with their weapons drawn. "Aw beans" Vrelk sighs as the guards approach. Since he does not have any weapons, he decides to complain with the law... for once' ,
            options: [
                {
-                text: 'Vrelk is under arrest ',
+                text: 'Next... ',
                 nextText: 17,
                },
                
+               
+           ]
+       },
+
+       {
+           id: 17,
+           text: 'The guards walk Vrelk through the cobblestone streets. Hi goblin hands have been bound, which is a bummer for him because he was planning on robbing his captors. Next time. They slowly make their way to a building that looks more ornate than the others in town. Vrelk is taken to a large room, where a woman who looks to be an authority figure sits in the middle' ,
+           options: [
+               {
+                text: 'Next...',
+                nextText: 18,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 18,
+           text: 'One of the guards speaks up. "Lady Mayor, we’ve captured the goblin who stole your magical necklace!" "Wait, I stold what now?" Vrelk genuinely does not remember stealing a magical necklace. ' ,
+           options: [
+               {
+                text: '"I am pretty sure I didnt steal a magic necklace... lately that is"',
+                nextText: 19,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 19,
+           text: '"Return my necklace IMMEDIATELY!" demands the Mayor. Vrelk shrugs "I am pretty sure I dont have this necklace youre yellin about". The mayor motions to the guards and demands that they search Vrelk for the necklace. The guards search Vrelk and he does not have the necklace or anything else in his possession. The Mayor demands an explaination. ' ,
+           options: [
+               {
+                text: '"I didn’t steal anything! I don’t even know where I am! The last thing I remember I was drinking and then I woke up in an alley! You’ve got the wrong guy!"',
+                nextText: 20,
+               },
+               {
+                text: '"This is discrimination! You’ve got the wrong guy! I demand compensation!"',
+                nextText: 20,
+               },
+               
+           ]
+       },
+
+       {
+           id: 20,
+           text: 'The Mayor is upset, but seeing that Vrelk was being honest, calms down. "Look Goblin. I’m not sure what you’re trying to pull here, but I do know that a goblin who matched your description stole my magic necklace. And I want it back."' ,
+           options: [
+               {
+                text: '"But it wasnt me! I was framed!"',
+                nextText: 21,
+               },
+               {
+                text: '"Another Goblin who looks like me? What a lucky, handsome fellow!"',
+                nextText: 21,
+               },
+               
+           ]
+       },
+
+       {
+           id: 21,
+           text: '"I pride myself on being a fair Mayor, so I’ll give you one chance to redeem yourself. You have until sunset to return my magic necklace. If you do not, I will have you arrested and taken to the Capital to be jailed." "Wait what?! How is this my problem? I am innocent!" Vrelk argues as the guards start leading him out of the room. "Good luck on your quest!" The Mayor says sarcastically as she waves' ,
+           options: [
+               {
+                text: 'Vrelk is pushed out the door of the building in to the street',
+                nextText: 22,
+               },
+               
+               
+           ]
+       },
+
+       {
+           id: 22,
+           text: '"Don’t come back until you have that necklace!" One of the guards shouts at Vrelk. "WHAT NECKLACE?!" a confused Vrelk yells back. The guards slam the door, leaving Vrelk in the street. "If this necklace is so valuable, I’m going to find it and skip town." Vrelk huffs' ,
+           options: [
+               {
+                text: 'Head in to town to gather clues',
+                nextText: 23,
+               },
+               {
+                text: 'Skip town and leave the necklace finding to the guards',
+                nextText: 24,
+               },
+               
+           ]
+       },
+
+       {
+           id: 24,
+           text: '"Nuts to this!" says Vrelk as he heads back in to town. He walks through town and past the guards at the front gate. "See ya suckers!" he says without turning to look at the guards. "Whateva" one of the guards shugs, and does nothing to stop him. Vrelk walks into the distance and suffers no consequences. ' ,
+           options: [
+               {
+                text: 'ENDING 1: Nuts to This! Start Again?',
+                nextText: 1,
+               },
+               {
+                text: 'Back',
+                nextText: 22,
+               },
                
            ]
        },
