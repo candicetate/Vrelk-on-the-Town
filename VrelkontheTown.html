@@ -397,7 +397,7 @@ body {
 
        {
            id: 17,
-           text: 'The guards walk Vrelk through the cobblestone streets. Hi goblin hands have been bound, which is a bummer for him because he was planning on robbing his captors. Next time. They slowly make their way to a building that looks more ornate than the others in town. Vrelk is taken to a large room, where a woman who looks to be an authority figure sits in the middle' ,
+           text: 'The guards walk Vrelk through the cobblestone streets. His goblin hands have been bound, which is a bummer for him because he was planning on robbing his captors. Next time. They slowly make their way to a building that looks more ornate than the others in town. Vrelk is taken to a large room, where a woman who looks to be an authority figure sits in the middle' ,
            options: [
                {
                 text: 'Next...',
@@ -410,7 +410,7 @@ body {
 
        {
            id: 18,
-           text: 'One of the guards speaks up. "Lady Mayor, we’ve captured the goblin who stole your magical necklace!" "Wait, I stold what now?" Vrelk genuinely does not remember stealing a magical necklace. ' ,
+           text: 'One of the guards speaks up. "Lady Mayor, we’ve captured the goblin who stole your magical necklace!" "Wait, I stole what now?" Vrelk genuinely does not remember stealing a magical necklace. ' ,
            options: [
                {
                 text: '"I am pretty sure I didnt steal a magic necklace... lately that is"',
@@ -483,6 +483,30 @@ body {
        },
 
        {
+           id: 23,
+           text: 'Vrelk starts heading into town. He’s not really sure where to start with this crazy business, but he figures asking around is his best bet. Since he already made some friends today, he decides to head back to them' ,
+           options: [
+               {
+                text: 'Talk to a man in the street',
+                nextText: 25,
+               },
+               {
+                text: 'Talk to an Orc in armor, preaching',
+                nextText: 26,
+               },
+               {
+                text: 'Look around',
+                nextText: 27,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 28,
+               },
+               
+           ]
+       },
+
+       {
            id: 24,
            text: '"Nuts to this!" says Vrelk as he heads back in to town. He walks through town and past the guards at the front gate. "See ya suckers!" he says without turning to look at the guards. "Whateva" one of the guards shugs, and does nothing to stop him. Vrelk walks into the distance and suffers no consequences. ' ,
            options: [
@@ -494,6 +518,108 @@ body {
                 text: 'Back',
                 nextText: 22,
                },
+               
+           ]
+       },
+
+       {
+           id: 25,
+           text: 'Vrelk bounds up to the man he talked to earlier in the day "Hello my good man!" he exclaims. "Oh gods, not you again! What do you want now?" Vrelk smiles "Any word on a missing magic necklace?" "I look like a magical man to you?! Go ask in the magic shop and leave me alone!" The man starts walking away. "Thanks friend!!" Vrelk waves at his new friend.' ,
+           options: [
+              
+               {
+                text: 'Talk to an Orc in armor, preaching',
+                nextText: 26,
+               },
+               {
+                text: 'Look around',
+                nextText: 27,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 28,
+               },
+               {
+                text: 'Go in to the magic shop',
+                nextText: 29,
+               },
+               
+           ]
+       },
+
+       {
+           id: 26,
+           text: 'Vrelk walks up to Katya, who is talking about somethingorother. "Katya, do you know anything about a missing magic necklace?" he asks, interuptting her sermon. Katya makes a face as Vrelk interupts her "I have not heard anything, Vrelk. Try the magic shop?". Vrelk nods and leaves Katya to continue her preaching' ,
+           options: [
+              
+           {
+                text: 'Talk to a man in the street',
+                nextText: 25,
+               },
+               {
+                text: 'Look around',
+                nextText: 27,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 28,
+               },
+               {
+                text: 'Go in to the magic shop',
+                nextText: 29,
+               },
+               
+           ]
+       },
+
+       {
+           id: 27,
+           text: 'Vrelk looks around. He still has no idea what town he is in. There are cobble stone streets, buildings aligning either side. There are people moving through the town as they likely do every day. One building reads MAGIC SHOP in big fancy letters. Was that there before?' ,
+           options: [
+           {
+                text: 'Talk to a man in the street',
+                nextText: 25,
+               },
+               {
+                text: 'Talk to an Orc in armor, preaching',
+                nextText: 26,
+               },
+               {
+                text: 'Go in to the Tavern',
+                nextText: 28,
+               },
+               {
+                text: 'Go in to the magic shop',
+                nextText: 29,
+               },
+           ]
+       },
+
+       {
+           id: 28,
+           text: 'Vrelk walks up to the tavern and attempts to open the door. The door is locked.' ,
+           options: [
+           {
+                text: 'Talk to a man in the street',
+                nextText: 25,
+               },
+               {
+                text: 'Talk to an Orc in armor, preaching',
+                nextText: 26,
+               },
+               
+           ]
+       },
+
+       {
+           id: 29,
+           text: 'Vrelk makes his way to the magic shop. It has a large sign above it that reads MAGIC SHOP, with a window in the front showcasing various potions and books. "Oooo arcane-ey" Vrelk says as he opens the door and heads inside.' ,
+           options: [
+           {
+                text: 'To be continued...',
+                nextText: 1,
+               },
+               
                
            ]
        },
